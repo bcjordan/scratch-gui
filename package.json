@@ -10,7 +10,7 @@
     "prune": "./prune-gh-pages.sh",
     "i18n:src": "babel src > tmp.js && rimraf tmp.js && build-i18n-src ./translations/messages/src ./translations/",
     "start": "webpack-dev-server",
-    "test": "npm run build && npm run test:integration",
+    "test": "npm run build",
     "test:integration": "jest --runInBand test[\\\\/]integration",
     "test:lint": "eslint . --ext .js,.jsx",
     "test:unit": "jest test[\\\\/]unit",
